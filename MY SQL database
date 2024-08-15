@@ -1,0 +1,29 @@
+-- Creating database
+create database bank;
+-- Selecting the database
+use bank;
+-- Creating customer table
+create table customer (
+ id int primary key,
+ customer_id varchar(25),
+ customer_name varchar(10),
+ branch varchar(13),
+ city varchar(25),
+ phone varchar(20)
+);
+-- Create account table
+create table account (
+id int primary key,
+account_id varchar(25),
+customer_id varchar(25),
+int balance
+);
+-- Create admin table
+create table admin (
+cust_id varchar(25),
+password varchar(25)
+);
+-- Inserting values
+insert into admin values
+("admin1","1234"),
+("admin2","9876")
